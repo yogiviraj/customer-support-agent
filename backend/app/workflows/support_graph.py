@@ -2,6 +2,7 @@
 LangGraph workflow for customer support agent
 Orchestrates the complete support workflow with conditional routing
 """
+#%%
 import logging
 from typing import Literal
 from langgraph.graph import StateGraph, END
@@ -51,10 +52,10 @@ def determine_route(state: CustomerSupportState) -> Literal[
         return "escalate_to_human"
     
     # Priority 2: Route by category
-    if category == "Technical":
+    if category == "Academic & Curriculum Analytics":
         logger.info("Routing to technical response handler")
         return "generate_technical_response"
-    elif category == "Billing":
+    elif category == "Billing, Payments & Administrative":
         logger.info("Routing to billing response handler")
         return "generate_billing_response"
     else:
@@ -115,7 +116,7 @@ def create_support_graph() -> StateGraph:
     
     # Compile the graph
     compiled_graph = workflow.compile()
-    
+  
     logger.info("Customer support workflow graph created successfully")
     return compiled_graph
 
@@ -150,3 +151,19 @@ def run_support_agent(customer_query: str, thread_id: str = "default") -> dict:
     except Exception as e:
         logger.error(f"Error running support agent: {e}")
         raise
+
+# %%
+if __name__ == "__main__":
+    import pprint
+
+    print("\n🚀 Running quick test for Support Agent Workflow...\n")
+
+    # 1️⃣ Example: Positive query (should go to general or academic response)
+    query1 = "What topics do you teach in Mathematics for Year 8?"
+    result1 = run_support_agent(query1)
+    print("🧩 Test 1 — Query:", query1)
+    pprint.pp(result1)
+    print("\n" + "-" * 60 + "\n")
+
+
+# %%

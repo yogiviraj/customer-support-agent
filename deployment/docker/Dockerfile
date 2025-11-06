@@ -1,4 +1,4 @@
-# Customer Support Agent - Docker Image
+# Tutor AI Agent - Docker Image
 # Multi-stage build for optimized image size
 
 FROM python:3.11-slim as builder

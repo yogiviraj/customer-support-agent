@@ -2,6 +2,7 @@
 Query classification agent
 Categorizes customer queries into Technical, Billing, or General
 """
+#%%
 import logging
 from typing import Dict
 from langchain_openai import ChatOpenAI
@@ -29,20 +30,61 @@ def categorize_inquiry(state: CustomerSupportState) -> Dict[str, str]:
     
     # Category classification prompt
     CATEGORY_PROMPT = """
-    You are a customer support query classifier. Your job is to categorize the incoming customer query
-    into one of the following categories:
+    You are an intelligent query classifier for a tutoring support system.
+    Your goal is to accurately categorize the following teacher or tutor query into one of three distinct categories.
 
-    1. **Technical**: Queries related to technical issues, integrations, APIs, SDKs, deployment, 
-       infrastructure, performance, security, or any technology-related topics.
+    ---
 
-    2. **Billing**: Queries related to pricing, payments, invoices, subscriptions, refunds, 
-       upgrades, downgrades, or any financial matters.
+    **Categories**
 
-    3. **General**: Queries about company information, support channels, policies, general questions,
-       or anything that doesn't fit Technical or Billing categories.
+    1. 🧮 **Academic & Curriculum Analytics**
+    Queries about **curriculum structure, subject topics, academic content by year group,**
+    or analytical insights about student data and performance.
 
-    Analyze the customer query and return ONLY the category name (Technical, Billing, or General).
-    Do not include any explanation, just the category name.
+    Includes:
+    - Understanding what topics or subjects are taught in a particular year or curriculum stage.
+    - Curriculum alignment or coverage questions.
+    - Analyzing, comparing, or reporting on academic performance, attendance patterns, or exam results.
+
+    Examples:
+    - "What topics are covered in Year 8 Maths?"
+    - "Compare the average math performance between Year 5 and Year 6."
+    - "Show me attendance patterns for Year 9 students."
+
+    2. 💳 **Billing, Payments & Administrative**
+    Queries related to pricing, invoices, refunds, subscriptions, payment failures, 
+    account upgrades/downgrades, or other financial or account issues.
+
+    3. 🧾 **General / Teaching Assistance**
+    Queries that ask for help **creating or preparing teaching materials** — such as 
+    lesson plans, quizzes, worksheets, or study guides.
+    Also includes platform or account questions not related to curriculum or analytics.
+
+    ---
+
+    **Instructions**
+
+    - Assign the query to exactly **one** category.
+    - Output **only** the category name, exactly as written:
+    `Academic & Curriculum Analytics`, `Billing, Payments & Administrative`, or `General / Teaching Assistance`
+    - Do **not** explain or justify your choice.
+    - If a query fits more than one category, select the **primary intent** of the query.
+
+    ---
+
+    **Examples**
+
+    | Query | Category |
+    |--------|-----------|
+    | "Show me my students’ attendance trend for Year 8" | Academic & Curriculum Analytics |
+    | "Generate a lesson on fractions and a short quiz to practice" | General / Teaching Assistance |
+    | "Prepare a Year 9 science test based on the UK curriculum" | General / Teaching Assistance |
+    | "Compare the average math performance between Year 5 and Year 6" | Academic & Curriculum Analytics |
+    | "How do I download my last month’s invoice?" | Billing, Payments & Administrative |
+    | "Where can I reset my tutor account password?" | Billing, Payments & Administrative |
+    | "What topic do you teach in maths for Year 8?" | Academic & Curriculum Analytics |
+
+    ---
 
     Customer Query:
     {customer_query}
@@ -66,16 +108,25 @@ def categorize_inquiry(state: CustomerSupportState) -> Dict[str, str]:
         category = response.content.strip()
         
         # Validate category
-        valid_categories = ["Technical", "Billing", "General"]
+        valid_categories = ["Academic & Curriculum Analytics", "Billing, Payments & Administrative", "General / Teaching Assistance"]
         if category not in valid_categories:
-            logger.warning(f"Invalid category '{category}', defaulting to 'General'")
-            category = "General"
-        
+            logger.warning(f"Invalid category '{category}', defaulting to 'General / Teaching Assistance'")
+            category = "General / Teaching Assistance"
+
         logger.info(f"Query categorized as: {category}")
+        #remove this test code
+        #print("Category Yogi:", category)
         
         return {"query_category": category}
         
     except Exception as e:
         logger.error(f"Error categorizing query: {e}")
         # Default to General on error
-        return {"query_category": "General"}
+        return {"query_category": "General / Teaching Assistance"}
+
+# %%
+if __name__ == "__main__":
+    demo_state = CustomerSupportState(customer_query="what topic you teach in maths for year 8?")
+    result = categorize_inquiry(demo_state)
+    print(result)
+# %%

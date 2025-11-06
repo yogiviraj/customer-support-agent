@@ -2,6 +2,7 @@
 Sentiment analysis agent
 Analyzes customer query sentiment as Positive, Neutral, or Negative
 """
+#%%
 import logging
 from typing import Dict
 from langchain_openai import ChatOpenAI
@@ -81,3 +82,25 @@ def analyze_sentiment(state: CustomerSupportState) -> Dict[str, str]:
         logger.error(f"Error analyzing sentiment: {e}")
         # Default to Neutral on error
         return {"query_sentiment": "Neutral"}
+
+# %%
+if __name__ == "__main__":
+    # quick manual test
+    from types import SimpleNamespace
+
+    # 1) fake state shaped like CustomerSupportState
+    # if your real state is a Pydantic model with .model_dump(), adjust accordingly
+    test_state = {
+        "customer_query": "I'm really unhappy, the lesson portal is not loading!"
+    }
+
+    result = analyze_sentiment(test_state)
+    print("Sentiment result:", result)
+
+    # try another one
+    test_state2 = {
+        "customer_query": "Thanks for helping me with the maths practice 😊"
+    }
+    result2 = analyze_sentiment(test_state2)
+    print("Sentiment result:", result2)
+# %%

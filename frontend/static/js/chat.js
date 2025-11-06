@@ -29,7 +29,7 @@ let isProcessing = false;
  * Initialize the chat application
  */
 function init() {
-    console.log('Initializing Customer Support Chat...');
+    console.log('Initializing Tutor Support AI Agent...');
     
     // Event Listeners
     sendBtn.addEventListener('click', handleSend);

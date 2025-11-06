@@ -5,26 +5,31 @@ __pycache__/
 *.pyd
 
 # Virtual environments
-venv/
-.venv/
+backend/venv/
+.envs
 ENV/
 env/
 env.bak/
+deployment/docker/.env
 
 # Jupyter
 .ipynb_checkpoints/
 
 # Logs and runtime
 *.log
+backend/*.log
 nohup.out
 *.sqlite3
-knowledge_base/
+backend/app/database/knowledge_base/
+backend/knowledge_base/
+deployment/docker/logs/*.*
 chroma/
 app/data/tmp/
 *.jsonl
 
 # Local configs and secrets
 .env
+backend/.env
 *.pem
 *.key
 *.crt
@@ -41,5 +46,3 @@ app/data/tmp/
 *.gz
 *.tar
 *.zip
-
-

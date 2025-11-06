@@ -1,3 +1,4 @@
+#%%
 """
 FastAPI application for Customer Support Agent
 Main entry point for the API server
@@ -38,7 +39,7 @@ async def lifespan(app: FastAPI):
     Lifespan context manager for startup and shutdown events
     """
     # Startup
-    logger.info("Starting Customer Support Agent API...")
+    logger.info("Starting Tutor Support Agent API...")
     try:
         # Initialize vector database
         initialize_vectordb()
@@ -55,8 +56,8 @@ async def lifespan(app: FastAPI):
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="Customer Support Agent API",
-    description="AI-powered customer support system with LangGraph workflow orchestration",
+    title="Tutor Support Agent API",
+    description="AI-powered tutor support system with LangGraph workflow orchestration",
     version="1.0.0",
     lifespan=lifespan
 )
@@ -248,7 +249,7 @@ async def status():
         "timestamp": datetime.now().isoformat()
     }
 
-
+#%%
 if __name__ == "__main__":
     # Run the application
     uvicorn.run(
@@ -258,3 +259,5 @@ if __name__ == "__main__":
         reload=True,
         log_level=settings.log_level.lower()
     )
+
+# %%

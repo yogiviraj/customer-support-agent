@@ -17,7 +17,7 @@ settings = get_settings()
 
 def generate_technical_response(state: CustomerSupportState) -> Dict[str, str]:
     """
-    Generate technical support response using RAG
+    Generate academic support response using RAG
     
     Args:
         state: Current workflow state
@@ -28,13 +28,13 @@ def generate_technical_response(state: CustomerSupportState) -> Dict[str, str]:
     query = state["customer_query"]
     category = state["query_category"]
     
-    logger.info(f"Generating technical response for: {query[:100]}...")
+    logger.info(f"Generating academic response for: {query[:100]}...")
     
     try:
-        # Retrieve relevant documents with technical filter
+        # Retrieve relevant documents with academic filter
         relevant_docs = search_knowledge_base(
             query=query,
-            category_filter="technical" if category.lower() == "technical" else None
+            category_filter="General / Teaching Assistance" if category.lower() == "general / teaching assistance" else None
         )
         
         # Extract content from retrieved documents
@@ -46,28 +46,27 @@ def generate_technical_response(state: CustomerSupportState) -> Dict[str, str]:
         if not retrieved_content:
             retrieved_content = "No specific documentation found for this query."
         
-        # Technical response prompt
-        TECHNICAL_PROMPT = """
-        You are a technical support specialist with deep expertise in our platform.
-        
-        Craft a clear and detailed technical support response for the following customer query.
-        Use the retrieved knowledge base information below to provide accurate, specific guidance.
-        
+        # Academic response prompt
+        ACADEMIC_PROMPT = """
+        You are an academic support specialist with deep expertise in UK curricula and student analytics.
+
+        Craft a clear and detailed academic support response for the following customer query.
+        Use the retrieved knowledge base information below to provide accurate, curriculum-aligned guidance.
+
         Guidelines:
-        - Be precise and technical but also clear and understandable
-        - Include specific examples, code snippets, or configuration details when relevant
-        - Reference documentation sources when applicable
-        - If the retrieved information doesn't fully answer the question, acknowledge what you know
-          and suggest additional resources or next steps
-        - Keep the response professional and helpful
-        
+        - Be precise about subjects, year groups, and learning goals
+        - Include concrete examples, learning strategies, or assessment tips when relevant
+        - Reference curriculum sources when applicable
+        - If the retrieved information is incomplete, acknowledge it and suggest next steps or resources
+        - Keep the response professional, supportive, and teacher-friendly
+
         Retrieved Knowledge Base Information:
         {retrieved_content}
-        
+
         Customer Query:
         {customer_query}
-        
-        Technical Support Response:
+
+        Academic Support Response:
         """
         
         # Initialize LLM
@@ -78,7 +77,7 @@ def generate_technical_response(state: CustomerSupportState) -> Dict[str, str]:
         )
         
         # Generate response
-        prompt = ChatPromptTemplate.from_template(TECHNICAL_PROMPT)
+        prompt = ChatPromptTemplate.from_template(ACADEMIC_PROMPT)
         chain = prompt | llm
         
         response = chain.invoke({
@@ -87,15 +86,15 @@ def generate_technical_response(state: CustomerSupportState) -> Dict[str, str]:
         })
         
         final_response = response.content.strip()
-        logger.info("Technical response generated successfully")
+        logger.info("Academic response generated successfully")
         
         return {"final_response": final_response}
         
     except Exception as e:
-        logger.error(f"Error generating technical response: {e}")
+        logger.error(f"Error generating academic response: {e}")
         return {
-            "final_response": "I apologize, but I encountered an error while processing your technical question. "
-                             "Please contact our technical support team at support@company.com for immediate assistance."
+            "final_response": "I apologize, but I encountered an error while processing your academic question. "
+                             "Please contact our academic support team at support@company.com for immediate assistance."
         }
 
 
@@ -118,7 +117,7 @@ def generate_billing_response(state: CustomerSupportState) -> Dict[str, str]:
         # Retrieve relevant documents with billing filter
         relevant_docs = search_knowledge_base(
             query=query,
-            category_filter="billing" if category.lower() == "billing" else None
+            category_filter="Billing, Payments & Administrative" if category.lower() == "billing, payments & administrative" else None
         )
         
         # Extract content from retrieved documents
@@ -203,7 +202,7 @@ def generate_general_response(state: CustomerSupportState) -> Dict[str, str]:
         # Retrieve relevant documents with general filter
         relevant_docs = search_knowledge_base(
             query=query,
-            category_filter="general" if category.lower() == "general" else None
+            category_filter="General / Teaching Assistance" if category.lower() == "general / teaching assistance" else None
         )
         
         # Extract content from retrieved documents
