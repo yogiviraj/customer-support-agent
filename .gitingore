@@ -1,0 +1,45 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env/
+env.bak/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and runtime
+*.log
+nohup.out
+*.sqlite3
+knowledge_base/
+chroma/
+app/data/tmp/
+*.jsonl
+
+# Local configs and secrets
+.env
+*.pem
+*.key
+*.crt
+*.bak
+
+# IDE / Editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Docker / Build cache
+*.pid
+*.sock
+*.gz
+*.tar
+*.zip
+
+

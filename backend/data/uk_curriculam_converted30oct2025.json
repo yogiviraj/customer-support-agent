@@ -1,0 +1,389 @@
+{
+  "documents": [
+    {
+      "text": "Year 1 English focuses on Spoken language, phonics, reading, writing (sentence structure, basic punctuation).",
+      "metadata": {
+        "year": 1,
+        "key_stage": "KS1",
+        "age_range": "5-6",
+        "subject": "English",
+        "topic": "Spoken language, phonics, reading, writing (sentence structure, basic punctuation)",
+        "foundation_subjects": "Art and Design, Computing, Design & Technology (DT), Geography, History, Music, Physical Education (PE)"
+      }
+    },
+    {
+      "text": "Year 1 Mathematics focuses on Number (up to 100), addition, subtraction, 2D/3D shapes, simple measures.",
+      "metadata": {
+        "year": 1,
+        "key_stage": "KS1",
+        "age_range": "5-6",
+        "subject": "Mathematics",
+        "topic": "Number (up to 100), addition, subtraction, 2D/3D shapes, simple measures",
+        "foundation_subjects": "Art and Design, Computing, Design & Technology (DT), Geography, History, Music, Physical Education (PE)"
+      }
+    },
+    {
+      "text": "Year 1 Science focuses on Seasonal changes, everyday materials, plants, animals (including humans).",
+      "metadata": {
+        "year": 1,
+        "key_stage": "KS1",
+        "age_range": "5-6",
+        "subject": "Science",
+        "topic": "Seasonal changes, everyday materials, plants, animals (including humans)",
+        "foundation_subjects": "Art and Design, Computing, Design & Technology (DT), Geography, History, Music, Physical Education (PE)"
+      }
+    },
+    {
+      "text": "Year 2 English focuses on Continued phonics, simple non-fiction/poetry, expanded writing skills, standard punctuation.",
+      "metadata": {
+        "year": 2,
+        "key_stage": "KS1",
+        "age_range": "6-7",
+        "subject": "English",
+        "topic": "Continued phonics, simple non-fiction/poetry, expanded writing skills, standard punctuation",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE"
+      }
+    },
+    {
+      "text": "Year 2 Mathematics focuses on Place value (up to 100), multiplication, division, fractions (1/2, 1/4), telling time.",
+      "metadata": {
+        "year": 2,
+        "key_stage": "KS1",
+        "age_range": "6-7",
+        "subject": "Mathematics",
+        "topic": "Place value (up to 100), multiplication, division, fractions (1/2, 1/4), telling time",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE"
+      }
+    },
+    {
+      "text": "Year 2 Science focuses on Living things and habitats, uses of everyday materials, observation skills.",
+      "metadata": {
+        "year": 2,
+        "key_stage": "KS1",
+        "age_range": "6-7",
+        "subject": "Science",
+        "topic": "Living things and habitats, uses of everyday materials, observation skills",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE"
+      }
+    },
+    {
+      "text": "Year 3 English focuses on Developing vocabulary, dictionary use, writing structure, complex punctuation (e.g., speech marks).",
+      "metadata": {
+        "year": 3,
+        "key_stage": "KS2 (Lower)",
+        "age_range": "7-8",
+        "subject": "English",
+        "topic": "Developing vocabulary, dictionary use, writing structure, complex punctuation (e.g., speech marks)",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language (Introduction)"
+      }
+    },
+    {
+      "text": "Year 3 Mathematics focuses on Place value (up to 1,000), column methods for operations, fractions, perimeter.",
+      "metadata": {
+        "year": 3,
+        "key_stage": "KS2 (Lower)",
+        "age_range": "7-8",
+        "subject": "Mathematics",
+        "topic": "Place value (up to 1,000), column methods for operations, fractions, perimeter",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language (Introduction)"
+      }
+    },
+    {
+      "text": "Year 3 Science focuses on Forces and magnets, light, rocks, nutrition, skeletons, and muscles.",
+      "metadata": {
+        "year": 3,
+        "key_stage": "KS2 (Lower)",
+        "age_range": "7-8",
+        "subject": "Science",
+        "topic": "Forces and magnets, light, rocks, nutrition, skeletons, and muscles",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language (Introduction)"
+      }
+    },
+    {
+      "text": "Year 4 English focuses on Grammar, expanding sentence complexity, comprehension of longer texts.",
+      "metadata": {
+        "year": 4,
+        "key_stage": "KS2 (Lower)",
+        "age_range": "8-9",
+        "subject": "English",
+        "topic": "Grammar, expanding sentence complexity, comprehension of longer texts",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language"
+      }
+    },
+    {
+      "text": "Year 4 Mathematics focuses on Formal written methods (multiplication/division), decimals, area, times tables check preparation.",
+      "metadata": {
+        "year": 4,
+        "key_stage": "KS2 (Lower)",
+        "age_range": "8-9",
+        "subject": "Mathematics",
+        "topic": "Formal written methods (multiplication/division), decimals, area, times tables check preparation",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language"
+      }
+    },
+    {
+      "text": "Year 4 Science focuses on Sound, electricity, states of matter, living things and their environments.",
+      "metadata": {
+        "year": 4,
+        "key_stage": "KS2 (Lower)",
+        "age_range": "8-9",
+        "subject": "Science",
+        "topic": "Sound, electricity, states of matter, living things and their environments",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language"
+      }
+    },
+    {
+      "text": "Year 5 English focuses on Mastering advanced punctuation (semicolons/colons), reading complex novels, narrative writing.",
+      "metadata": {
+        "year": 5,
+        "key_stage": "KS2 (Upper)",
+        "age_range": "9-10",
+        "subject": "English",
+        "topic": "Mastering advanced punctuation (semicolons/colons), reading complex novels, narrative writing",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language"
+      }
+    },
+    {
+      "text": "Year 5 Mathematics focuses on Prime/square numbers, converting units of measure, volume, percentages, algebraic thinking.",
+      "metadata": {
+        "year": 5,
+        "key_stage": "KS2 (Upper)",
+        "age_range": "9-10",
+        "subject": "Mathematics",
+        "topic": "Prime/square numbers, converting units of measure, volume, percentages, algebraic thinking",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language"
+      }
+    },
+    {
+      "text": "Year 5 Science focuses on Earth and space, properties and changes of materials, life cycles, human development.",
+      "metadata": {
+        "year": 5,
+        "key_stage": "KS2 (Upper)",
+        "age_range": "9-10",
+        "subject": "Science",
+        "topic": "Earth and space, properties and changes of materials, life cycles, human development",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language"
+      }
+    },
+    {
+      "text": "Year 6 English focuses on Formal writing for assessment (SATs), using passive voice, high-level grammar analysis.",
+      "metadata": {
+        "year": 6,
+        "key_stage": "KS2 (Upper)",
+        "age_range": "10-11",
+        "subject": "English",
+        "topic": "Formal writing for assessment (SATs), using passive voice, high-level grammar analysis",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language"
+      }
+    },
+    {
+      "text": "Year 6 Mathematics focuses on Ratio, proportion, order of operations, advanced geometry (angles), SATs preparation.",
+      "metadata": {
+        "year": 6,
+        "key_stage": "KS2 (Upper)",
+        "age_range": "10-11",
+        "subject": "Mathematics",
+        "topic": "Ratio, proportion, order of operations, advanced geometry (angles), SATs preparation",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language"
+      }
+    },
+    {
+      "text": "Year 6 Science focuses on Classification of living things, evolution and inheritance, light and sight, electrical circuits.",
+      "metadata": {
+        "year": 6,
+        "key_stage": "KS2 (Upper)",
+        "age_range": "10-11",
+        "subject": "Science",
+        "topic": "Classification of living things, evolution and inheritance, light and sight, electrical circuits",
+        "foundation_subjects": "Art and Design, Computing, DT, Geography, History, Music, PE, Foreign Language"
+      }
+    },
+    {
+      "text": "Year 7 English focuses on Literary heritage (Shakespeare/Romantic poets), non-fiction analysis, creative and transactional writing.",
+      "metadata": {
+        "year": 7,
+        "key_stage": "KS3",
+        "age_range": "11-12",
+        "subject": "English",
+        "topic": "Literary heritage (Shakespeare/Romantic poets), non-fiction analysis, creative and transactional writing",
+        "foundation_subjects": "Art and Design, Citizenship, Computing (Programming), DT, Geography, History, Modern Foreign Language, Music, PE"
+      }
+    },
+    {
+      "text": "Year 7 Mathematics focuses on Algebra (expressions, equations), number theory, proportional reasoning, construction and locus.",
+      "metadata": {
+        "year": 7,
+        "key_stage": "KS3",
+        "age_range": "11-12",
+        "subject": "Mathematics",
+        "topic": "Algebra (expressions, equations), number theory, proportional reasoning, construction and locus",
+        "foundation_subjects": "Art and Design, Citizenship, Computing (Programming), DT, Geography, History, Modern Foreign Language, Music, PE"
+      }
+    },
+    {
+      "text": "Year 7 Science focuses on Biology (cells, structures), Chemistry (particles, elements), Physics (forces, energy).",
+      "metadata": {
+        "year": 7,
+        "key_stage": "KS3",
+        "age_range": "11-12",
+        "subject": "Science",
+        "topic": "Biology (cells, structures), Chemistry (particles, elements), Physics (forces, energy)",
+        "foundation_subjects": "Art and Design, Citizenship, Computing (Programming), DT, Geography, History, Modern Foreign Language, Music, PE"
+      }
+    },
+    {
+      "text": "Year 8 English focuses on Developing critical analysis, reading diverse texts, persuasive and academic writing styles.",
+      "metadata": {
+        "year": 8,
+        "key_stage": "KS3",
+        "age_range": "12-13",
+        "subject": "English",
+        "topic": "Developing critical analysis, reading diverse texts, persuasive and academic writing styles",
+        "foundation_subjects": "Art and Design, Citizenship, Computing, DT, Geography, History, Modern Foreign Language, Music, PE"
+      }
+    },
+    {
+      "text": "Year 8 Mathematics focuses on Graphs and sequences, probability, simultaneous equations, ratio and proportion in context.",
+      "metadata": {
+        "year": 8,
+        "key_stage": "KS3",
+        "age_range": "12-13",
+        "subject": "Mathematics",
+        "topic": "Graphs and sequences, probability, simultaneous equations, ratio and proportion in context",
+        "foundation_subjects": "Art and Design, Citizenship, Computing, DT, Geography, History, Modern Foreign Language, Music, PE"
+      }
+    },
+    {
+      "text": "Year 8 Science focuses on Deeper study of systems (digestive/circulatory), reactions (acids/alkalis), waves, electricity.",
+      "metadata": {
+        "year": 8,
+        "key_stage": "KS3",
+        "age_range": "12-13",
+        "subject": "Science",
+        "topic": "Deeper study of systems (digestive/circulatory), reactions (acids/alkalis), waves, electricity",
+        "foundation_subjects": "Art and Design, Citizenship, Computing, DT, Geography, History, Modern Foreign Language, Music, PE"
+      }
+    },
+    {
+      "text": "Year 9 English focuses on Transition to GCSE skills, synthesizing information, sophisticated essay writing, pre-20th century literature.",
+      "metadata": {
+        "year": 9,
+        "key_stage": "KS3",
+        "age_range": "13-14",
+        "subject": "English",
+        "topic": "Transition to GCSE skills, synthesizing information, sophisticated essay writing, pre-20th century literature",
+        "foundation_subjects": "Art and Design, Citizenship, Computing, DT, Geography, History, Modern Foreign Language, Music, PE"
+      }
+    },
+    {
+      "text": "Year 9 Mathematics focuses on Quadratic equations, trigonometry, vectors, non-linear functions, early GCSE topics.",
+      "metadata": {
+        "year": 9,
+        "key_stage": "KS3",
+        "age_range": "13-14",
+        "subject": "Mathematics",
+        "topic": "Quadratic equations, trigonometry, vectors, non-linear functions, early GCSE topics",
+        "foundation_subjects": "Art and Design, Citizenship, Computing, DT, Geography, History, Modern Foreign Language, Music, PE"
+      }
+    },
+    {
+      "text": "Year 9 Science focuses on Inheritance, quantitative chemistry, motion, practical investigation design.",
+      "metadata": {
+        "year": 9,
+        "key_stage": "KS3",
+        "age_range": "13-14",
+        "subject": "Science",
+        "topic": "Inheritance, quantitative chemistry, motion, practical investigation design",
+        "foundation_subjects": "Art and Design, Citizenship, Computing, DT, Geography, History, Modern Foreign Language, Music, PE"
+      }
+    },
+    {
+      "text": "Year 10 English Language focuses on Analysis of unseen non-fiction texts, creative writing, spoken language skills.",
+      "metadata": {
+        "year": 10,
+        "key_stage": "KS4 (GCSE)",
+        "age_range": "14-15",
+        "subject": "English Language",
+        "topic": "Analysis of unseen non-fiction texts, creative writing, spoken language skills",
+        "foundation_subjects": "Core PE, Citizenship (Non-Exam), Optional GCSE Subjects (Humanities, Languages, Arts, DT)"
+      }
+    },
+    {
+      "text": "Year 10 English Literature focuses on Study of set texts (e.g., Shakespeare, 19th-century novel, poetry anthology).",
+      "metadata": {
+        "year": 10,
+        "key_stage": "KS4 (GCSE)",
+        "age_range": "14-15",
+        "subject": "English Literature",
+        "topic": "Study of set texts (e.g., Shakespeare, 19th-century novel, poetry anthology)",
+        "foundation_subjects": "Core PE, Citizenship (Non-Exam), Optional GCSE Subjects (Humanities, Languages, Arts, DT)"
+      }
+    },
+    {
+      "text": "Year 10 Mathematics focuses on GCSE syllabus: Number, Algebra, Geometry, Ratio, Probability, Statistics (first half).",
+      "metadata": {
+        "year": 10,
+        "key_stage": "KS4 (GCSE)",
+        "age_range": "14-15",
+        "subject": "Mathematics",
+        "topic": "GCSE syllabus: Number, Algebra, Geometry, Ratio, Probability, Statistics (first half)",
+        "foundation_subjects": "Core PE, Citizenship (Non-Exam), Optional GCSE Subjects (Humanities, Languages, Arts, DT)"
+      }
+    },
+    {
+      "text": "Year 10 Science (Single/Combined) focuses on In-depth biology, chemistry, and physics modules, core practicals, examination content (first half).",
+      "metadata": {
+        "year": 10,
+        "key_stage": "KS4 (GCSE)",
+        "age_range": "14-15",
+        "subject": "Science (Single/Combined)",
+        "topic": "In-depth biology, chemistry, and physics modules, core practicals, examination content (first half)",
+        "foundation_subjects": "Core PE, Citizenship (Non-Exam), Optional GCSE Subjects (Humanities, Languages, Arts, DT)"
+      }
+    },
+    {
+      "text": "Year 11 English Language focuses on Exam technique, extended writing, revising language analysis skills.",
+      "metadata": {
+        "year": 11,
+        "key_stage": "KS4 (GCSE)",
+        "age_range": "15-16",
+        "subject": "English Language",
+        "topic": "Exam technique, extended writing, revising language analysis skills",
+        "foundation_subjects": "Core PE, Citizenship (Non-Exam), Optional GCSE Subjects (Completion and examination)"
+      }
+    },
+    {
+      "text": "Year 11 English Literature focuses on Final revision of set texts and themes, essay structuring under timed conditions.",
+      "metadata": {
+        "year": 11,
+        "key_stage": "KS4 (GCSE)",
+        "age_range": "15-16",
+        "subject": "English Literature",
+        "topic": "Final revision of set texts and themes, essay structuring under timed conditions",
+        "foundation_subjects": "Core PE, Citizenship (Non-Exam), Optional GCSE Subjects (Completion and examination)"
+      }
+    },
+    {
+      "text": "Year 11 Mathematics focuses on GCSE syllabus: Advanced topics, problem-solving, formula application, revision and past papers.",
+      "metadata": {
+        "year": 11,
+        "key_stage": "KS4 (GCSE)",
+        "age_range": "15-16",
+        "subject": "Mathematics",
+        "topic": "GCSE syllabus: Advanced topics, problem-solving, formula application, revision and past papers",
+        "foundation_subjects": "Core PE, Citizenship (Non-Exam), Optional GCSE Subjects (Completion and examination)"
+      }
+    },
+    {
+      "text": "Year 11 Science (Single/Combined) focuses on Completing all modules, in-depth revision, mock exams, final examination preparation.",
+      "metadata": {
+        "year": 11,
+        "key_stage": "KS4 (GCSE)",
+        "age_range": "15-16",
+        "subject": "Science (Single/Combined)",
+        "topic": "Completing all modules, in-depth revision, mock exams, final examination preparation",
+        "foundation_subjects": "Core PE, Citizenship (Non-Exam), Optional GCSE Subjects (Completion and examination)"
+      }
+    }
+  ]
+}
